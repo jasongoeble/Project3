@@ -1,0 +1,72 @@
+@import "styles/styles";
+
+
+// quick fixes
+
+.primary-navigation {
+ color: #e3464c;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* General sizing */
+ul.dropdown-lr {
+  width: 200px;
+}
+
+/* mobile fix */
+@media (max-width: 768px) {
+  .dropdown-lr h3 {
+    color: #eee;
+  }
+  .dropdown-lr label {
+    color: #eee;
+  }
+}
+
+.discussionComments {
+  border: 0;
+  padding: 0;
+  background-color: #eee;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+.discussionInputs {
+  width: 340%;
+}
+
+.discussionCommentTextarea{
+  width: 70%;
+}
+
+
+/// Hot Fixes
+.hero_single.version_2:before {
+  background: url(./img/homepage-image-one-1600x1067.jpg) center center no-repeat;
+}
+
+.hero_in.hotels:before {
+  background: url(./img/event-details-1600x1067.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hero_in.hotels_detail:before {
+  background: url(./img/bg-img-3-1600x1067.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hero_in.general:before {
+  background: url(./img/background-image-code.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

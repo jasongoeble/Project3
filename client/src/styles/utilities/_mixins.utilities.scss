@@ -1,0 +1,48 @@
+/// Utilities > Mixins
+
+/// Font Size Mixin
+/// @param $font-size
+/// Required vars
+///   $base-font-size
+///   $base-line-height
+@mixin font-size($font-size, $line-height:true){
+  font-size:$font-size;
+  font-size:($font-size / $base-font-size)*1rem;
+  @if $line-height == true{
+    line-height:ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
+  }
+}
+
+
+/// Box Sizing Mixin
+/// @param $type
+///   Defaults to border-box if $type if not defined
+@mixin box-sizing($type: border-box){
+  box-sizing: $type;
+}
+
+@mixin inherit-box-sizing($type: inherit){
+  &::before,
+  &::after {
+    box-sizing: $type;
+  }
+}
+
+
+/// Font Weight (700)
+/// Header Font
+@mixin fw-header($fw: 700){
+  font-weight: $fw;
+}
+
+
+/// Base Font Weight (400)
+/// Base Font Weight
+@mixin fw-base($fw: 400){
+  font-weight: $fw;
+}
+
+
+
+
+

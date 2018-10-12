@@ -1,0 +1,44 @@
+/// Fonts
+
+/// Font Weights
+
+$base-font-weight: 400;
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+$heading-size-1: 32px;
+$heading-size-2: 28px;
+$heading-size-3: 26px;
+$heading-size-4: 20px;
+$heading-size-5: 18px;
+$heading-size-6: 16px;
+
+
+h1 {
+  @include font-size($heading-size-1);
+}
+
+h2 {
+  @include font-size($heading-size-2);
+}
+
+h3 {
+  @include font-size($heading-size-3);
+  /* 1.17*16 = 18.72 */
+}
+
+h4 {
+  @include font-size($heading-size-4);
+  /* 1*16 = 16 */
+}
+
+h5 {
+  @include font-size($heading-size-5);
+  /* 0.83*16 = 13.28 */
+}
+
+h6 {
+  @include font-size($heading-size-6);
+  /* 0.75*16 = 12 */
+}

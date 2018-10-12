@@ -1,0 +1,22 @@
+{
+  "jwtSecret": "fuckpassport",
+    "development": {
+      "username": "root",
+      "password": "target1",
+      "database": "meetup_db",
+      "host": "localhost",
+      "dialect": "mysql"
+    },
+    "test": {
+      "username": "root",
+      "password": "target1",
+      "database": "testdb",
+      "host": "localhost",
+      "dialect": "mysql",
+      "logging": false
+    },
+    "production": {
+      "use_env_variable": "JAWSDB_URL",
+      "dialect": "mysql"
+    }
+  }
